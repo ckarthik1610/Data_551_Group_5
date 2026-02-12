@@ -22,9 +22,9 @@ After a search is submitted, three coordinated panels are displayed:
 
 This panel provides a concise summary of the selected drug, including:
 
--   Brand and generic names\
--   Active ingredient(s)\
--   Pharmacologic class\
+-   Brand and generic names
+-   Active ingredient(s)
+-   Pharmacologic class (optional; may be added via API integration to provide contextual information about the ingredient’s therapeutic role; or can just be added for selected drugs as proof of concept)
 -   Formulation type (single vs. combination)
 
 Users can optionally expand a naming hierarchy view that maps Ingredient → Generic → Brand relationships to clarify naming redundancy.
@@ -41,8 +41,8 @@ A 2D similarity map visualizes related drugs based on ingredient composition. Th
 
 When multiple drugs are selected, an ingredient comparison heatmap is displayed:
 
--   Rows represent selected drugs\
--   Columns represent active ingredients\
+-   Rows represent selected drugs
+-   Columns represent active ingredients
 -   Cell shading indicates ingredient presence
 
 This allows users to quickly identify overlapping or distinct formulations.
@@ -57,8 +57,8 @@ An optional bar chart summarizes how many distinct formulation groups exist with
 
 ## Data Sources
 
--   **RxNorm** – standardized drug identity and ingredient mapping\
--   **RxClass** – pharmacologic class metadata
+-   **RxNorm** – standardized drug identity and ingredient mapping
+-   **RxClass** – pharmacologic class metadata (optional; require api call)
 
 The app uses structured ingredient relationships to compute similarity and visualize formulation overlap.
 
